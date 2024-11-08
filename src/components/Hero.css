@@ -1,0 +1,64 @@
+/* Hero.css */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.launch-btn {
+    background-color: #4054b2;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.launch-btn:hover {
+    background-color: #6474b8;
+}
+
+.launch-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    z-index: 1000;
+    animation: fadeOut 4s forwards;
+}
+
+.countdown {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.rocket {
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/stars-background.webp');
+    background-size: contain;
+    animation: moveUp 4s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-800px); opacity: 0; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
