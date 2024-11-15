@@ -1,11 +1,24 @@
 // controllers/authController.js
+const Joi = require('joi');
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+// Esquema de validación de Joi para los datos del usuario
+const userSchema = Joi.object({
+    username: Joi.string().min(3).required(),
+    password: Joi.string().min(8).required()
+});
+
 // Función para registrar un nuevo usuario
 exports.register = async (req, res) => {
     try {
+        // Validar los datos de entrada con Joi
+        const { error } = userSchema.validate(req.body);
+        if (error) {
+            return res.status(400).json({ message: error.details[0].message });
+        }
+
         const { username, password } = req.body;
 
         // Verificar si el usuario ya existe
@@ -30,6 +43,12 @@ exports.register = async (req, res) => {
 // Función para el inicio de sesión
 exports.login = async (req, res) => {
     try {
+        // Validar los datos de entrada con Joi
+        const { error } = userSchema.validate(req.body);
+        if (error) {
+            return res.status(400).json({ message: error.details[0].message });
+        }
+
         const { username, password } = req.body;
 
         // Buscar al usuario en la base de datos
