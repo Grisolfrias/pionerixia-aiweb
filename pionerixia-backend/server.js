@@ -1,8 +1,3 @@
-// server.js
-app.get('/', (req, res) => {
-    res.send('Bienvenido a la API de PionerixIA');
-  });
-  
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -21,6 +16,11 @@ app.use(helmet());
 // Middlewares generales
 app.use(cors());
 app.use(express.json());
+
+// Ruta de bienvenida en la raíz
+app.get('/', (req, res) => {
+    res.send('Bienvenido a la API de PionerixIA');
+});
 
 // Rutas de autenticación
 app.use('/api/auth', authRoutes);
