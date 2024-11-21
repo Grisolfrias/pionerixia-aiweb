@@ -1,15 +1,24 @@
 /* src/components/IntroCarga.css */
-
 .intro-carga {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #282c34;
-    color: white;
-  }
-  
-  .intro-carga h2 {
-    font-size: 2em;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Fondo oscuro */
+  color: #00FFB2; /* Color de texto verde menta */
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.bot-mensaje {
+  animation: fadeInOut 3s ease-in-out; /* Animación para entrada y salida del mensaje */
+}
+
+/* Animación para que el mensaje aparezca y luego desaparezca */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}

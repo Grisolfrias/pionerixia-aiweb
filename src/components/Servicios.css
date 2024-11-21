@@ -1,0 +1,45 @@
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    background-color: #1A1A1A;
+  }
+  
+  .servicio-card {
+    background-color: #333333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .servicio-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .servicio-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .servicio-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .cta-servicio {
+    background-color: #00FFB2;
+    color: #1A1A1A;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-servicio:hover {
+    background-color: #1E90FF;
+  }
+  

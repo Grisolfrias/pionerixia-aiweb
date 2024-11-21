@@ -1,73 +1,61 @@
 /* src/components/Hero.css */
 
-/* Contenedor principal del hero */
+/* Fondo del Hero */
 .hero {
   position: relative;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   text-align: center;
-}
-
-/* Contenedor del video */
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  z-index: -1;
-}
-
-/* Estilos del video */
-.background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Capa de superposición para oscurecer el video y mejorar la legibilidad */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-/* Contenido principal */
-.content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
+  background: radial-gradient(circle, #000428, #004e92);
   padding: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin: 0.5em 0;
+/* Texto principal y subtítulo */
+.content h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 4px 10px rgba(0, 255, 178, 0.7);
+  margin: 0.5rem 0;
 }
 
-p {
-  font-size: 1.2em;
+.content p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
 
+/* Botón de llamada a la acción */
 .cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #fff;
-  background-color: #3498db;
-  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #00FFB2;
   border-radius: 5px;
-  font-weight: bold;
-  margin-top: 20px;
+  color: #121212;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 80%;  /* Ajusta el ancho del botón en móviles */
+  max-width: 250px; /* Evita que el botón sea demasiado grande */
 }
 
 .cta-button:hover {
-  background-color: #2980b9;
+  background-color: #1E90FF;
+  transform: scale(1.05);
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 1.8rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
 }

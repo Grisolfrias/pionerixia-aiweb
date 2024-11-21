@@ -1,26 +1,19 @@
 // src/App.js
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import IntroCarga from './components/IntroCarga';
-import Private from './components/Private';
-import VideoSection from './components/VideoSection';
 
 function App() {
-  const [showIntro, setShowIntro] = useState(true);
+  const [language, setLanguage] = useState('es');
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowIntro(false);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const handleLanguageChange = (lang) => {
+    setLanguage(lang);
+  };
 
   return (
     <div className="App">
-      {showIntro ? <IntroCarga /> : <Hero />}
-      <VideoSection /> {/* Asegúrate de que VideoSection esté aquí */}
-      <Private />
+      <Navbar language={language} onLanguageChange={handleLanguageChange} />
+      <Hero />
     </div>
   );
 }
