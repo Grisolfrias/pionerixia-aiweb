@@ -1,22 +1,28 @@
-import Header from './components/Header';
+// src/App.js
+import React, { useState, useEffect } from 'react';
 import Hero from './components/Hero';
-import Story from './components/Story';
-import Courses from './components/Courses';
-import InstagramBot from './components/InstagramBot';
-import Footer from './components/Footer';
-import './styles/global.css';
+import IntroCarga from './components/IntroCarga';
+import Private from './components/Private';
+import VideoSection from './components/VideoSection';
 
 function App() {
-    return (
-        <div className="App">
-            <Header />
-            <Hero />
-            <Story />
-            <Courses />
-            <InstagramBot />
-            <Footer />
-        </div>
-    );
+  const [showIntro, setShowIntro] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowIntro(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+    <div className="App">
+      {showIntro ? <IntroCarga /> : <Hero />}
+      <VideoSection /> {/* Asegúrate de que VideoSection esté aquí */}
+      <Private />
+    </div>
+  );
 }
 
 export default App;

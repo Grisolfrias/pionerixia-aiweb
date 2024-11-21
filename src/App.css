@@ -1,38 +1,84 @@
-.App {
+/* src/App.css */
+
+/* Estilos generales para toda la aplicación */
+body {
+  background-color: #121212; /* Fondo oscuro */
+  color: #e0e0e0; /* Texto en gris claro */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #3498db;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2980b9;
+}
+
+/* Estilos para los contenedores de sección */
+.section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border-radius: 10px;
+}
+
+h1, h2 {
+  color: #ffffff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Estilos para el botón de llamado a la acción */
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #3498db;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cta-button:hover {
+  background-color: #2980b9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Estilos para el pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #2980b9;
+}
+.video-section {
+  background-color: red;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 200px;
 }

@@ -1,0 +1,21 @@
+{
+    "branding": {
+      "logo": "/assets/logo.png",
+      "primaryColor": "#1E90FF",
+      "ctaColor": "#32CD32"
+    },
+    "storytelling": {
+      "introText": "Domina tu negocio sin trucos ni costos ocultos.",
+      "keyMessage": "Aprende marketing y psicomarketing con IA de manera práctica.",
+      "ctaText": "Inicia tu transformación ahora"
+    },
+    "telegramBot": {
+      "welcomeMessage": "Bienvenido a PionerixIA en Telegram",
+      "courseModules": [
+        "Inicio en Marketing",
+        "Psicomarketing Básico",
+        "Redes Sociales para Ventas"
+      ]
+    }
+  }
+  

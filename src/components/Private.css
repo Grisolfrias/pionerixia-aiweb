@@ -1,0 +1,16 @@
+/* src/components/Private.css */
+
+.private {
+    padding: 20px;
+  }
+  
+  .private h2 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .private p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  

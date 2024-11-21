@@ -1,43 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empoderamiento en marketing e IA para microempresarios">
+    <meta name="theme-color" content="#008080">
+    <link rel="icon" href="images/PionerixIA-logo.webp">
+    <link rel="stylesheet" href="styles.css">
+    <title>PionerixIA - Domina tu Negocio con IA y Marketing</title>
+</head>
+<body>
+    <!-- Encabezado de Presentación -->
+    <header class="hero">
+        <nav class="navbar">
+            <img src="images/PionerixIA-logo.webp" alt="Logo PionerixIA" class="logo">
+            <ul class="nav-links">
+                <li><a href="#introduccion">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="cta-button">Toma el Control Total Ahora</button>
+        </nav>
+        <div class="hero-content">
+            <h1>Domina tu Negocio Sin Trucos, Sin Gasto Extra y Sin Complejidades</h1>
+            <p>Descubre cómo el marketing y la inteligencia artificial pueden estar a tu alcance, sin manipulaciones ni dependencia de agencias.</p>
+            <a href="#introduccion" class="cta-button">Empieza Ahora</a>
+        </div>
+    </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Introducción Inspiracional -->
+    <section id="introduccion" class="section">
+        <h2>La Verdad Que Nadie Te Cuenta Sobre el Marketing</h2>
+        <p>¿Harto de promesas vacías y teorías inalcanzables? En PionerixIA, te mostramos un camino accesible para hacer crecer tu negocio de manera auténtica.</p>
+        <blockquote>Haz que tu negocio crezca con tu propia voz y sin intermediarios.</blockquote>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Nuestro Propósito -->
+    <section id="nosotros" class="section">
+        <h2>Nosotros También Pasamos por lo Mismo que Tú</h2>
+        <p>Conocemos el miedo a la tecnología y el marketing. Por eso, PionerixIA te acompaña en el camino, mostrando cómo puedes aprovechar la IA y el psicomarketing para lograr un crecimiento sostenible y sin dependencia.</p>
+    </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="section">
+        <h2>Nuestros Servicios</h2>
+        <div class="service">
+            <h3>Módulo 1: Superar el Miedo a la Tecnología</h3>
+            <p>Construye confianza en el uso de herramientas tecnológicas.</p>
+        </div>
+        <div class="service">
+            <h3>Módulo 2: Automatización Básica</h3>
+            <p>Optimiza tus procesos, ahorrando tiempo en tareas repetitivas.</p>
+        </div>
+        <div class="service">
+            <h3>Módulo 3: Psicomarketing Digital</h3>
+            <p>Conecta emocionalmente con tus clientes de forma genuina.</p>
+        </div>
+        <div class="service">
+            <h3>Módulo 4: Redes Sociales para Ventas</h3>
+            <p>Usa redes sociales como Facebook e Instagram de forma efectiva y sin complicaciones.</p>
+        </div>
+        <div class="service">
+            <h3>Módulo 5: Aplicación de IA en Microempresas</h3>
+            <p>Mejora la eficiencia en tu negocio con herramientas de IA fáciles de implementar.</p>
+        </div>
+    </section>
+
+    <!-- Bitácora del Explorador (Newsletter) -->
+    <section id="bitacora" class="section">
+        <h2>Únete a Nuestra Bitácora del Explorador</h2>
+        <p>Recibe contenido exclusivo, guías prácticas y novedades sobre herramientas digitales para tu negocio.</p>
+        <form action="/subscribe" method="POST">
+            <input type="email" name="email" placeholder="Ingresa tu correo" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <!-- Historias de Éxito y Testimonios -->
+    <section id="testimonios" class="section">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <div class="testimonial">
+            <p>“Gracias a PionerixIA, aprendí a optimizar mis procesos sin contratar agencias externas. Ahora gestiono mi marketing con confianza.”</p>
+            <p>- Empresario Satisfecho</p>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes (FAQ) -->
+    <section id="faq" class="section">
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+            <summary>¿Qué es la automatización y cómo puede aplicarla mi negocio?</summary>
+            <p>La automatización permite realizar tareas repetitivas de manera eficiente, liberando tiempo para actividades de alto valor.</p>
+        </details>
+        <details>
+            <summary>¿Cómo puedo usar la IA sin conocimientos técnicos?</summary>
+            <p>Nuestros módulos te guían paso a paso, sin tecnicismos, mostrando aplicaciones prácticas de IA para tu negocio.</p>
+        </details>
+    </section>
+
+    <!-- Formulario de Registro -->
+    <section id="registro" class="section">
+        <h2>Transforma Tu Negocio Hoy Mismo</h2>
+        <p>Accede a recursos exclusivos, actualizaciones de la industria y guías para tu crecimiento.</p>
+        <form action="/registro" method="POST">
+            <input type="text" name="nombre" placeholder="Tu Nombre Completo" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="tel" name="telefono" placeholder="Teléfono (Opcional)">
+            <button type="submit">Regístrate</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>PionerixIA está aquí para guiarte en cada órbita de tu crecimiento digital. Juntos, llegaremos más lejos.</p>
+        <div class="social-links">
+            <a href="https://facebook.com/PionerixIA">Facebook</a>
+            <a href="https://twitter.com/PionerixIA">Twitter</a>
+            <a href="https://instagram.com/PionerixIA">Instagram</a>
+        </div>
+        <small>&copy; 2024 PionerixIA. Todos los derechos reservados.</small>
+    </footer>
+</body>
 </html>

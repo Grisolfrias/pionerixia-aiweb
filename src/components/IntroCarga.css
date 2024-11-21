@@ -1,0 +1,15 @@
+/* src/components/IntroCarga.css */
+
+.intro-carga {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .intro-carga h2 {
+    font-size: 2em;
+  }
+  
